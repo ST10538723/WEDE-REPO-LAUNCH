@@ -1,23 +1,23 @@
 Luh Twizzys
 
-1. Introduction
+ Introduction
 
 Luh Twizzys is a simple clothes store website made using HTML and CSS. This website contains various clothes products, product prices, product images and Buy Now buttons. Moreover, it was designed to be used in different screen sizes.
 
-2. Products
+ Products
 
 * T-Shirt - R200
 * Jeans - R400
 * Hoodie - R500
 
-3. Technologies Used
+ Technologies Used
 
 * HTML
 * CSS
 * Visual Studio Code
 * Google Chrome
 
-4. Features
+ Features
 
 * Product images
 * Product prices
@@ -25,7 +25,7 @@ Luh Twizzys is a simple clothes store website made using HTML and CSS. This webs
 * Contact information
 * Responsive design in small screen sizes
 
-5. Relative Units
+ Relative Units
 
 Relative units have been used to make the website more responsive.
 
@@ -33,13 +33,13 @@ Relative units have been used to make the website more responsive.
 * % - for width to allow flexibility to fit the screen size.
 * height: auto - for images to preserve aspect ratio.
 
-6. Responsive Images
+ Responsive Images
 
 <picture> and srcset have been used for responsive images.
 
 It enables the website to display appropriate image based on the screen size and increases the responsiveness of the website.
 
-7. Testing and Iteration
+ Testing and Iteration
 
 Tests were performed using Google Chrome Developer Tools.
 
@@ -51,27 +51,37 @@ The website was tested in various screen sizes:
 
 Tests confirmed that all content, graphics, and buttons were displayed properly on multiple devices.
 
-8. Screenshot Evidence
+ Screenshot Evidence
+They are all provided as a file.
 
-Desktop Version
-
-[Insert screenshot of desktop version here]
-
-Tablet Version
-
-[Insert screenshot of tablet version here]
-
-Mobile Version
-
-[Insert screenshot of mobile version here]
-
-9. Contact Information
+ Contact Information
 
 Email: ST10538723@rcconnect.edu.za
 
 
 Telephone: 012 345 6789
 
-10. Conclusion
+Website Pages
+
+* index.html – Homepage
+* enquiry.html – Product enquiry page
+* contact.html – Contact page
+
+Changelog – Part 3
+
+* Improved website structure and functionality.
+* Added JavaScript product search.
+* Added product sorting.
+* Added product enquiry form.
+* Added contact form with input validation.
+* Improved responsive styling.
+* Added SEO metadata.
+* Added robots.txt and sitemap.xml.
+* Published the website using Netlify.
+
+Part 2 Feedback
+
+No specific Part 2 feedback was provided to me. Further improvements were made to the website as part of Part 3.
+ Conclusion
 
 The Luh Twizzys website has been developed successfully using the basics of HTML and CSS. Relative units and responsive images have been incorporated for making the website responsive and screen size agnostic.
