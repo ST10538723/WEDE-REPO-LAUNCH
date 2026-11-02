@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-WEBSITE-URL/sitemap.xml
+Sitemap: https://6ae8fb9bc6cabbac39911159--playful-meerkat-aa2056.netlify.app//sitemap.xml
