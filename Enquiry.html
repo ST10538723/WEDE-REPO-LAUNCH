@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Enquiry | Luh Twizzys</title>
+    <meta name="description" content="Send a product enquiry to Luh Twizzys streetwear.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Product Enquiry</h1>
+    <p>Interested in our clothing? Complete the form below.</p>
+
+    <form id="enquiryForm">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required>
+
+        <br><br>
+
+        <label for="product">Product:</label>
+        <select id="product" required>
+            <option value="">Select a product</option>
+            <option value="T-shirt">T-shirt - R200</option>
+            <option value="Jeans">Jeans - R400</option>
+            <option value="Hoodie">Hoodie - R500</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Your Enquiry:</label>
+        <textarea id="message" required></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit Enquiry</button>
+
+    </form>
+
+    <p id="response"></p>
+
+    <script>
+        // Get the selected product from the homepage
+        const params = new URLSearchParams(window.location.search);
+        const selectedProduct = params.get("product");
+
+        if (selectedProduct) {
+            document.getElementById("product").value = selectedProduct;
+        }
+
+        // Process the enquiry
+        document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const product = document.getElementById("product").value;
+            const prices = {
+                "T-shirt": "R200",
+                "Jeans": "R400",
+                "Hoodie": "R500"
+            };
+
+            document.getElementById("response").textContent =
+                "Thank you for your enquiry! The " + product +
+                " costs " + prices[product] +
+                ". We will contact you regarding availability.";
+
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
